@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeopardy Game</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="app">
+        <header class="top-header">
+            <h1>Trivia Game Show</h1>
+            <p class="score">Score <span class="score-count"></span></p>
+        </header>
+        <div class="board">
+        </div>
+
+        <div class="card-modal">
+            <div class=card-modal-inner>
+                <h2 class="clue-text">
+
+                </h2>
+                <form>
+                    <input name="user-answer" placeholder="Enter answer" type="text" />
+                    <button type="submit">Answer</button>
+                </form>
+                <div class="result">
+                    <p class="result_success">CORRECT</p>
+                    <p class="result_fail">INCORRECT</p>
+                    <p class="result_correct-answer">
+                        The correct answer is <span class="result_correct-answer-text"></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
